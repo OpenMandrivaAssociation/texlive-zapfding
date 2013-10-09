@@ -1,12 +1,12 @@
-# revision 21570
+# revision 31835
 # category Package
 # catalog-ctan /fonts/urw/base35
-# catalog-date 2011-03-01 21:42:17 +0100
+# catalog-date 2012-06-06 22:57:48 +0200
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-zapfding
-Version:	20110301
-Release:	2
+Version:	20120606
+Release:	1
 Summary:	URW "Base 35" font pack for LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/urw/base35
@@ -45,7 +45,6 @@ Symbol); - URW Bookman; - URW Chancery L Medium Italic
 %{_texmfdistdir}/fonts/afm/urw/zapfding/uzdr.afm
 %{_texmfdistdir}/fonts/map/dvips/zapfding/uzd.map
 %{_texmfdistdir}/fonts/tfm/adobe/zapfding/pzdr.tfm
-%{_texmfdistdir}/fonts/tfm/cspsfonts-adobe/zapfding/rpzdr.tfm
 %{_texmfdistdir}/fonts/tfm/urw35vf/zapfding/uzdr.tfm
 %{_texmfdistdir}/fonts/type1/urw/zapfding/uzdr.pfb
 %{_texmfdistdir}/fonts/type1/urw/zapfding/uzdr.pfm
@@ -60,16 +59,3 @@ Symbol); - URW Bookman; - URW Chancery L Medium Italic
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips fonts tex %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110301-2
-+ Revision: 757780
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110301-1
-+ Revision: 719971
-- texlive-zapfding
-- texlive-zapfding
-- texlive-zapfding
-

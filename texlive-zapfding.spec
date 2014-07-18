@@ -5,13 +5,13 @@
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-zapfding
-Version:	20120606
-Release:	7
+Version:	20140418
+Release:	1
 Summary:	URW "Base 35" font pack for LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/urw/base35
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/zapfding.tar.xz
+Source0:	http://mirror.macomnet.net/pub/CTAN/systems/texlive/tlnet/archive/zapfding.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg

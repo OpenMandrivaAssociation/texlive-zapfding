@@ -5,7 +5,7 @@
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-zapfding
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	URW "Base 35" font pack for LaTeX
 Group:		Publishing

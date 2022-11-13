@@ -1,17 +1,11 @@
-# revision 31835
-# category Package
-# catalog-ctan /fonts/urw/base35
-# catalog-date 2012-06-06 22:57:48 +0200
-# catalog-license gpl
-# catalog-version undef
 Name:		texlive-zapfding
-Version:	20190228
+Version:	61719
 Release:	1
 Summary:	URW "Base 35" font pack for LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/urw/base35
 License:	GPL
-Source0:	http://mirror.macomnet.net/pub/CTAN/systems/texlive/tlnet/archive/zapfding.tar.xz
+Source0:	http://mirror.macomnet.net/pub/CTAN/systems/texlive/tlnet/archive/zapfding.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -31,12 +25,12 @@ Symbol); - URW Bookman; - URW Chancery L Medium Italic
 (substituting for Adobe's Palatino).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -52,7 +46,7 @@ Symbol); - URW Bookman; - URW Chancery L Medium Italic
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0
+%autosetup -p1 -c
 
 %build
 

@@ -1,6 +1,6 @@
 Name:		texlive-zapfding
-Version:	61719
-Release:	2
+Version:	77161
+Release:	1
 Summary:	URW "Base 35" font pack for LaTeX
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/fonts/urw/base35

@@ -11,7 +11,8 @@ License:	gpl
 Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/zapfding.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 A set of fonts for use as "drop-in" replacements for Adobe's basic set,
@@ -24,3 +25,10 @@ Symbol); URW Bookman; URW Chancery L Medium Italic (substituting for
 Adobe's Zapf Chancery); URW Gothic L Book (substituting for Adobe's
 Avant Garde); and URW Palladio L (substituting for Adobe's Palatino).
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from zapfding:
+Map uzd.map
+TL_DROPIN_EOF
